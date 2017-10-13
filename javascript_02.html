@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <script type="text/javascript">
-    var text1 = "안녕하세요.";
+    var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+ 
+   var text1 = "안녕하세요.";
     var text2 = '안녕하세요.';
 
    // 큰 따옴표(") 인용문장 출력
