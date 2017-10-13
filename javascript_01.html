@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-    console.log = function(msg) {
-        var ul = document.getElementById("log");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(msg));
-        ul.appendChild(li);
-    }
-
-    window.onload = function() {
-        document.getElementById("run").onclick = function() {
-
     <script type="text/javascript">
     var byteValue = 100;
     var shortValue = 30000;
@@ -48,7 +37,7 @@
     </script>
 </head>
 <body>
-<div>
+    <div>
         <textarea cols = "100" rows="40">
             var byteValue = 100;
             var shortValue = 30000;
@@ -89,6 +78,6 @@
     </div>
     <div>
         <ul id="log" style="list-style-type:circle"></ul>
-    </div> 
+    </div>    
 </body>
 </html>
